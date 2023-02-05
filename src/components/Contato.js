@@ -17,7 +17,7 @@ const baseURL = "http://localhost:2222/contato"
     window.location.reload();
 } 
   const addForm = data => axios.post(baseURL, data)
-  .then(()=>{alert('ok') || recarregarAPagina()}).catch(()=>{alert('erro')})
+  .then(()=>{alert('Email enviado com sucesso') || recarregarAPagina()}).catch(()=>{alert('erro')})
 
   return (
     <div className="Contato">
@@ -37,15 +37,19 @@ const baseURL = "http://localhost:2222/contato"
     <form onSubmit={handleSubmit(addForm)}>
     <label>What is your email</label><br />
     <input type='text'  name="from" {...register("from", 
-    { required: true })}></input><br />
+    { required: true })} ></input><br />
+    {errors.from && <span>Campo Obrigatorio*</span>}<br />
 
     <label>Reason for contact</label><br />
     <input type='text'  name="subject" {...register("subject", 
     { required: true })}></input><br />
+    {errors.subject && <span>Campo Obrigatorio*</span>}<br />
 
     <label>What can we help?</label><br />
     <textarea  name="email" {...register("email", 
     { required: true })}></textarea><br />
+    {errors.email && <span>Campo Obrigatorio*</span>}<br />
+
     <button className='btn-salv' type="submit">Enviar</button>
     </form>
     </div>

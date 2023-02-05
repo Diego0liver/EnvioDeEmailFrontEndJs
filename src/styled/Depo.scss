@@ -1,0 +1,27 @@
+ 
+
+
+ .depo{
+width: 100%px;
+background: linear-gradient(279.85deg, #FFFFFF 0%, #FAF5F2 100%);
+padding: 100px;
+h2{
+    text-align: center;
+    color: #564E4E;
+    margin-bottom: 60px;
+}
+
+
+ }
+.cont-depo{
+    display: flex;
+    justify-content: space-evenly !important;
+    
+}
+.depoimento{
+    display: flex;
+    margin-top: 20px;
+    img{
+        border-radius: 200px;
+    }
+}

@@ -1,0 +1,42 @@
+.Contato {
+    text-align: center;
+    background: linear-gradient(275.58deg, #000000 0%, #4B4B4B 100%);
+    color: white;
+   margin-top: -30px;
+  }
+  .conteiner{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+  }
+
+  .btn-salv{
+   background-color: rgba(247, 148, 137, 1);
+   color: white;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   font-weight: bold;
+  }
+
+  textarea{
+    resize: none;
+    height: 150px;
+    width: 400px;
+ } 
+ textarea:focus{
+    outline: 0;
+    border: 1px solid rgba(247, 148, 137, 1);
+}
+ input{
+    width: 400px;
+    padding: 5px;
+ }
+ input:focus{
+    outline: 0;
+    border: 1px solid rgba(247, 148, 137, 1);
+}
+ img{
+    width: 45px;
+    padding: 10px;
+ }

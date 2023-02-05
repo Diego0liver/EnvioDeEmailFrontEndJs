@@ -1,6 +1,11 @@
+
 .home{
 background: rgba(0, 0, 0, 0.25);
 height: 800px;
+background-image: url('../img/sofa.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 input{
     width: 360px;
    height: 60px;
@@ -71,6 +76,31 @@ width: 750px;
 margin-left: 300px;
 margin-top: 25px;
 font-weight: bold;
+}
+
+@media only screen and (max-width: 700px){
+    .home{
+        h1{
+            width: 260px;
+            margin-left: 80px;
+            font-size: 20px;
+        }
+        font-size: 30px;
+        input{
+            width: 260px;
+           margin-left: 80px;
+           }
+           p{
+            font-size: 15px;
+        }
+        .boll-cont{
+            margin-top: 300px;
+        }
+        li{
+            padding: 10px;
+            font-size: 20px;
+        }   
+    }
 }
 
 

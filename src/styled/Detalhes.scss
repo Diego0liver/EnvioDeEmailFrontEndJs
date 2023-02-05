@@ -29,3 +29,16 @@ border-radius: 10px;
 .info{
   color: #F79489;
 }
+
+@media only screen and (max-width: 700px){
+  .conteiner-det{
+    .card-conteiner{
+      display: block;
+  }
+  .card{
+  width: 300px;
+  height: 200px;
+
+  }
+  }
+}

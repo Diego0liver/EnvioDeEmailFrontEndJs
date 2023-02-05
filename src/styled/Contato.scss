@@ -40,3 +40,19 @@
     width: 45px;
     padding: 10px;
  }
+
+
+ @media only screen and (max-width: 700px){
+   .Contato{
+      .conteiner{
+         display: block;
+      }
+      h1{
+        display: none;
+      }
+
+      input, textarea{
+         width: 280px;
+      }
+   }
+ }

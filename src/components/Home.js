@@ -1,15 +1,11 @@
 import React from 'react'
 import '../styled/Home.scss'
-import Sofa from '../img/sofa.png'
 
 
 
 export const Home = () => {
   return (
-    <div className='home' style={{backgroundImage: `url(${Sofa})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center'}}>
+    <div className='home'>
     <u> 
         <li>Shop</li>
         <li>About</li>
